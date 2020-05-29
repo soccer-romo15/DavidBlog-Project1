@@ -1,0 +1,116 @@
+/*Images*/
+#mainImage {
+    margin-left: 10%;
+    width: 80%;
+    height: 49.05em;
+    border-radius: 1px;
+}
+
+#aboutMeImg {
+    min-width: 30%;
+    height: 37.2em;
+    border-radius: 50%;
+    margin-left: 10%;
+    float: left;
+}
+
+.underImg {
+    width: 10%;
+    height: 100px;
+}
+
+.blackBackground {
+    background-color: black;
+}
+
+.center-items {
+    text-align: center;
+
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.opacity:hover {
+    opacity: 1;
+}
+
+.subPage {
+    background: rgb(238, 240, 241);
+}
+
+/*Text*/
+h1 {
+    font-size: 100px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Manjari', sans-serif;
+}
+
+.aboutUsPara {
+    width: 90%;
+    text-align: right;
+    font-size: 40px;
+}
+
+/* Contacts layout */
+#inputBoxes{
+    float: left;
+    margin-left: 30%
+}
+#subResBtn
+{
+    display: flex;
+    float: right;
+    padding-top: 8%
+}
+fieldset {
+    margin: 0px auto;
+    text-align: center;
+    width: 75%;
+    font-size: 100%;
+    border: 2px black solid;
+    padding: 15px;
+}
+
+label {
+    display: block;
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 180px;
+    text-align: right;
+}
+
+textarea {
+    width: 75%;
+    height: 100px;
+}
+
+form#payment input,
+form #payment select {
+    display: block;
+    float: left;
+}
+
+.input-btn
+{
+    float: right !important;
+}
+
+#fullN, #fullE, #fullSource
+{
+    text-align: center;
+}
+#name, #email, #source, #FirstN , #LastN, #Email, #Heard
+{
+    display: inline-flex;
+    left: 30%;
+}

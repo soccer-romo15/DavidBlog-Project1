@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David's Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="javascriptStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+        <a class="navbar-brand active" href="#">David's Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About-Us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subcribe">Subcribe</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="blackBackground center">
+        <div>
+            <img id="mainImage" src="images/PoncaVeiw.jpeg" alt="mainImage">
+        </div>
+        <div class="center-items">
+            <p></p>
+            <img class="underImg opacity opacity-hover-off" id="ponca"
+                onclick="swappableImage(Pono)"
+                src="images/PoncaVeiw.jpeg" alt="Amazing View">
+            <img class="underImg opacity opacity-hover-off" id="congo"
+                onclick="swappableImage(congo)"
+                src="images/Congres.jpeg" alt="Washington Monument">
+            <img class="underImg opacity opacity-hover-off" id="house"
+                onclick="swappableImage(house)"
+                src="images/whiteHouse.jpeg" alt="White House">
+            <img class="underImg opacity opacity-hover-off" id="lake"
+                onclick="swappableImage(lake)"
+                src="images/lakeMichigan.jpeg" alt="Lake">
+        </div>
+    </div>
+    <div>
+        <p id="About-Us"></p>
+        <h1>About Us</h1>
+        <img id="aboutMeImg" src="images/Lincoln.jpeg" alt="Standing in front of Lincoln Memorial">
+        <p class="aboutUsPara">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Sunt atque voluptas labore iusto aliquam repellendus qui,
+            veritatis, maxime quis quam eveniet consequuntur ratione quo
+            tenetur exercitationem architecto eos, alias optio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Sunt atque voluptas labore iusto aliquam repellendus qui,
+            veritatis, maxime quis quam eveniet consequuntur ratione quo
+            tenetur exercitationem architecto eos, alias optio?
+        </p>
+    </div>
+    <div class="subPage" id="subcribe">
+        <div>
+            <h1 id="subHeader">Subcribe</h1>
+            <form id="payment" action="index.html" method="post">
+                <fieldset>
+                    <legend>Your Contact Info</legend>
+                    <div id="inputBoxes">
+                        <label id="firstBox" for="fName">First Name</label>
+                        <input id="fName" type="text" name="fName" required>
+                        <label id="lastBox" for="lName">Last Name </label>
+                        <input id="lName" name="lName" type="text" required>
+                        <label for="emailA">Email Address</label>
+                        <input id="emailA" type="text" name="emailA" required>
+                        <label for="fromWho" class="heardList">How'd you hear about us?</label>
+                        <input id="fromWho" type="text" name="heardUs" list="heardUs">
+                    </div>
+                    <div id="subResBtn">
+                        <input class="input-btn" id="resetButton" type="reset" name="redo" onclick="">
+                        <input class="input-btn submit-btn" type=button value='Submit' 
+                        onclick="changeName(F,L,E,X)">
+                    </div>
+                </fieldset>
+            </form>
+            <datalist id="heardUs">
+                <option value="Family"></option>
+                <option value="Friends"></option>
+                <option value="Work"></option>
+                <option value="Newspaper"></option>
+                <option value="Advertisments"></option>
+            </datalist>
+        </div>
+
+        <div id="personalInfo">
+            <div id="fullN">
+                <h5 id="name"> Name: </h5>
+                <p id="FirstN"></p>
+                <p id="LastN"></p>
+            </div>
+            <p></p>
+            <div id="fullE">
+                <h5 id="email"> Email:</h5>
+                <p id="Email"></p>
+            </div>
+            <p></p>
+            <div id="fullSource">
+                <h5 id="source"> Best Source Ever: </h5>
+                <p id="Heard"></p>
+            </div>
+        </div>
+    </div>
+    <script src="javaScriptBlog.js"></script>
+</body>
+
+</html>
